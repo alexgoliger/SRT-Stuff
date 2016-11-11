@@ -1,0 +1,14 @@
+﻿<Window x:Class="RegistrationApp.Client.EmptyScheduleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrationApp.Client"
+        mc:Ignorable="d"
+        Title="Empty Schedule" Height="142" Width="391">
+    <Grid>
+    <Label x:Name="Main_lbl" Content="You are not enrolled in any courses." HorizontalAlignment="Left" Height="44" Margin="34,8,0,0" VerticalAlignment="Top" Width="307" FontSize="16" HorizontalContentAlignment="Center"/>
+    <Button x:Name="OK_btn" Content="OK" HorizontalAlignment="Left" Margin="120,58,0,0" VerticalAlignment="Top" Width="138" Height="30" Click="OK_btn_Click"/>
+
+  </Grid>
+</Window>

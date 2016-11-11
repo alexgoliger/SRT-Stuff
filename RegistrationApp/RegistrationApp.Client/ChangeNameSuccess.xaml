@@ -1,0 +1,15 @@
+﻿<Window x:Class="RegistrationApp.Client.ChangeNameSuccess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrationApp.Client"
+        mc:Ignorable="d"
+        Title="Success" Height="142" Width="391">
+    <Grid>
+    <Label x:Name="Main_lbl" Content="Name change was successful!" HorizontalAlignment="Left" Height="44" Margin="34,8,0,0" VerticalAlignment="Top" Width="307" FontSize="21.333" HorizontalContentAlignment="Center"/>
+    <Button x:Name="Back_btn" Content="Go Back to Main Menu" HorizontalAlignment="Left" Margin="34,78,0,0" VerticalAlignment="Top" Width="138" Click="Back_btn_Click"/>
+    <Button x:Name="Done_btn" Content="I Am Done" HorizontalAlignment="Left" Margin="207,78,0,0" VerticalAlignment="Top" Width="138" Click="Done_btn_Click"/>
+
+  </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="RegistrationApp.Client.ChangeNameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrationApp.Client"
+        mc:Ignorable="d"
+        Title="Student Name Change" Height="500" Width="700">
+  <Grid>
+    <Label x:Name="Main_lbl" Content="Change Your Name" Height="53" Margin="60,10,0,0" VerticalAlignment="Top" Width="576" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="32"/>
+    <Label x:Name="Student_Id_lbl" Content="Student ID" HorizontalAlignment="Left" Height="44" Width="121" Margin="31,55,0,0" VerticalAlignment="Top" FontSize="21.333"/>
+    <TextBlock x:Name="Student_Id_block" HorizontalAlignment="Left" Margin="40,104,0,0" TextAlignment="Left" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="120" Height="23"/>
+    <Label x:Name="First_Name_Current_lbl" Content="Current First Name" HorizontalAlignment="Left" Margin="38,150,0,0" VerticalAlignment="Top" Width="200" Height="40" FontSize="21.333"/>
+    <TextBlock x:Name="First_Name_Current_block" HorizontalAlignment="Left" Margin="40,195,0,0" TextAlignment="Left" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="120" Height="23"/>
+    <Label x:Name="Last_Name_Current_lbl" Content="Current Last Name" HorizontalAlignment="Left" Margin="40,249,0,0" VerticalAlignment="Top" Width="200" FontSize="21.333"/>
+    <TextBlock x:Name="Last_Name_Current_block" HorizontalAlignment="Left" Margin="40,290,0,0" TextAlignment="Left" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="120" Height="23"/>
+    <Label x:Name="First_Name_New_lbl" Content="New First Name" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Width="200" Height="40" FontSize="21.333"/>
+    <TextBox x:Name="First_Name_New_txt" HorizontalAlignment="Left" Margin="410,195,0,0" TextAlignment="Left" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="120" Height="23"/>
+    <Label x:Name="Last_Name_New_lbl" Content="New Last Name" HorizontalAlignment="Left" Margin="410,249,0,0" VerticalAlignment="Top" Width="200" FontSize="21.333"/>
+    <TextBox x:Name="Last_Name_New_txt" HorizontalAlignment="Left" Margin="410,290,0,0" TextAlignment="Left" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="120" Height="23"/>
+    <Button x:Name="Submit_btn" Content="Submit" HorizontalAlignment="Left" Margin="135,352,0,0" VerticalAlignment="Top" Width="140" Height="44" Click="Submit_btn_Click"/>
+    <Button x:Name="Cancel_btn" Content="Cancel" HorizontalAlignment="Left" Margin="405,352,0,0" VerticalAlignment="Top" Width="140" Height="44" Click="Cancel_btn_Click"/>
+
+  </Grid>
+</Window>
