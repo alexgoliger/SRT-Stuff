@@ -9,59 +9,23 @@
 
 namespace RegistrationApp.Data
 {
-  using System;
-  using System.Collections.Generic;
-
-  public partial class Course
-  {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Course()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Course
     {
-      this.StudentCourses = new HashSet<StudentCourse>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Course()
+        {
+            this.StudentCourses = new HashSet<StudentCourse>();
+        }
+    
+        public int CourseId { get; set; }
+        public string Title { get; set; }
+        public System.TimeSpan StartHour { get; set; }
+        public System.TimeSpan EndHour { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StudentCourse> StudentCourses { get; set; }
     }
-
-    public int CourseId { get; set; }
-    public string Title { get; set; }
-    public System.TimeSpan StartHour { get; set; }
-    public System.TimeSpan EndHour { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<StudentCourse> StudentCourses { get; set; }
-
-    public override bool Equals(object obj)
-    {
-      Course c = obj as Course;
-      return c != null ?
-        CourseId == c.CourseId && Title == c.Title && StartHour.Equals(c.StartHour) && EndHour.Equals(c.EndHour)
-        : false;
-    }
-
-    public override int GetHashCode()
-    {
-      return CourseId + StartHour.Hours + EndHour.Hours * Title.GetHashCode();
-    }
-
-    public override string ToString()
-    {
-      return string.Format
-      (
-        "Course #{0}: {1} from {2} to {3}",
-        CourseId,
-        Title,
-        ConvertHourToTime(StartHour.Hours),
-        ConvertHourToTime(EndHour.Hours)
-      );
-    }
-
-    private string ConvertHourToTime(int hour)
-    {
-      if (hour == 12)
-      {
-        return "12 PM";
-      }
-
-      string s = hour < 12 ? " AM" : " PM";
-      return hour % 12 + s;
-    }
-  }
 }
