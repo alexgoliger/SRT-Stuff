@@ -9,35 +9,22 @@
 
 namespace RegistrationApp.Data
 {
-  using System;
-  using System.Collections.Generic;
-
-  public partial class Student
-  {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Student()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Student
     {
-      this.StudentCourses = new HashSet<StudentCourse>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Student()
+        {
+            this.StudentCourses = new HashSet<StudentCourse>();
+        }
+    
+        public int StudentId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StudentCourse> StudentCourses { get; set; }
     }
-
-    public int StudentId { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<StudentCourse> StudentCourses { get; set; }
-
-    public override bool Equals(object obj)
-    {
-      Student s = obj as Student;
-      return s != null ?
-        StudentId == s.StudentId && FirstName == s.FirstName && LastName == s.LastName
-        : false;
-    }
-
-    public override int GetHashCode()
-    {
-      return StudentId + FirstName.GetHashCode() * LastName.GetHashCode();
-    }
-  }
 }

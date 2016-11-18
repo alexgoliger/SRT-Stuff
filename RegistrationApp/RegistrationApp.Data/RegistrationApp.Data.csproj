@@ -55,6 +55,9 @@
       <DependentUpon>RegistrationModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataHelper.cs" />
+    <Compile Include="EntityExtensions\Course.cs" />
+    <Compile Include="EntityExtensions\Student.cs" />
+    <Compile Include="EntityExtensions\StudentCourse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationModel.Context.cs">
       <AutoGen>True</AutoGen>

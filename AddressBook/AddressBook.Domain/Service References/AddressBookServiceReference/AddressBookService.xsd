@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AddressBook.Data.Common.Records" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AddressBook.Data.Common.Records" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfStateRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StateRecord" nillable="true" type="tns:StateRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStateRecord" nillable="true" type="tns:ArrayOfStateRecord" />
+  <xs:complexType name="StateRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Record">
+        <xs:sequence>
+          <xs:element name="StateIdentifier" nillable="true" type="xs:string" />
+          <xs:element name="State" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StateRecord" nillable="true" type="tns:StateRecord" />
+  <xs:complexType name="Record">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="Record" nillable="true" type="tns:Record" />
+  <xs:complexType name="ArrayOfPersonRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonRecord" nillable="true" type="tns:PersonRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonRecord" nillable="true" type="tns:ArrayOfPersonRecord" />
+  <xs:complexType name="PersonRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Record">
+        <xs:sequence>
+          <xs:element name="Address" nillable="true" type="tns:AddressRecord" />
+          <xs:element name="Email" nillable="true" type="tns:EmailRecord" />
+          <xs:element name="Name" nillable="true" type="tns:NameRecord" />
+          <xs:element name="PersonIdentifier" nillable="true" type="xs:string" />
+          <xs:element name="Phone" nillable="true" type="tns:PhoneRecord" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PersonRecord" nillable="true" type="tns:PersonRecord" />
+  <xs:complexType name="AddressRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Record">
+        <xs:sequence>
+          <xs:element name="AddressIdentifier" nillable="true" type="xs:string" />
+          <xs:element name="Street" nillable="true" type="xs:string" />
+          <xs:element name="City" nillable="true" type="xs:string" />
+          <xs:element name="State" nillable="true" type="xs:string" />
+          <xs:element name="Zip" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddressRecord" nillable="true" type="tns:AddressRecord" />
+  <xs:complexType name="EmailRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Record">
+        <xs:sequence>
+          <xs:element name="EmailIdentifier" nillable="true" type="xs:string" />
+          <xs:element name="Email" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailRecord" nillable="true" type="tns:EmailRecord" />
+  <xs:complexType name="NameRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Record">
+        <xs:sequence>
+          <xs:element name="NameIdentifier" nillable="true" type="xs:string" />
+          <xs:element name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element name="LastName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NameRecord" nillable="true" type="tns:NameRecord" />
+  <xs:complexType name="PhoneRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Record">
+        <xs:sequence>
+          <xs:element name="PhoneIdentifier" nillable="true" type="xs:string" />
+          <xs:element name="Phone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PhoneRecord" nillable="true" type="tns:PhoneRecord" />
+</xs:schema>
