@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0db94a1f010446c4ac27961ded5a82f5" Name="Diagram1">
+        <EntityTypeShape EntityType="AddressBookModel.Address" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.Email" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.Name" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.Person" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.Phone" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.State" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="AddressBookModel.FK__Address__StateID__07F6335A" ManuallyRouted="false" />
+        <AssociationConnector Association="AddressBookModel.FK__Person__AddressI__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="AddressBookModel.FK__Person__EmailID__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="AddressBookModel.FK__Person__NameID__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="AddressBookModel.FK__Person__PhoneID__1A14E395" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
