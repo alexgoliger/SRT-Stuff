@@ -1,0 +1,5 @@
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Domain\bin\Debug\AddressBook.Domain.dll.config
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Domain\bin\Debug\AddressBook.Domain.dll
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Domain\bin\Debug\AddressBook.Domain.pdb
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Domain\obj\Debug\AddressBook.Domain.dll
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Domain\obj\Debug\AddressBook.Domain.pdb
