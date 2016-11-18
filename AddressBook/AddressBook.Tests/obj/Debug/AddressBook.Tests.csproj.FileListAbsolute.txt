@@ -1,0 +1,6 @@
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Tests\bin\Debug\AddressBook.Tests.dll
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Tests\bin\Debug\AddressBook.Tests.pdb
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Tests\obj\Debug\AddressBook.Tests.csprojResolveAssemblyReference.cache
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Tests\obj\Debug\AddressBook.Tests.dll
+C:\Eintern\eintern-batch\SRT-Stuff\AddressBook\AddressBook.Tests\obj\Debug\AddressBook.Tests.pdb
